@@ -1,0 +1,16 @@
+<li>
+  <p>
+    {{ postRef.title }}
+  </p>
+  <p>
+    {{ postRef.thought }}
+  </p>
+  <p>
+    {{ postRef.votes }}
+  </p>
+  <div>
+    <button (click)="voteUp()">up</button>
+    <button (clicK)="voteDown()">down</button>
+    <button class="fas fa-trash" (click)="deletePost()"></button>
+  </div>
+</li>
